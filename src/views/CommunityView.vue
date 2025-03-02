@@ -39,22 +39,6 @@ const posts = [
     likes: 202,
     image: '/images/book-dummy.jpg',
   },
-  {
-    title: '모던 자바스크립트 Deep Dive',
-    date: '2025.02.24',
-    author: '박새힘',
-    comment: 101,
-    likes: 202,
-    image: '/images/book-dummy.jpg',
-  },
-  {
-    title: '모던 자바스크립트 Deep Dive',
-    date: '2025.02.24',
-    author: '박새힘',
-    comment: 101,
-    likes: 202,
-    image: '/images/book-dummy.jpg',
-  },
 ]
 
 // 리뷰 카드 더미데이터
@@ -177,11 +161,11 @@ const filteredReviews = computed(() => {
   }
 
   .post-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 35px;
     margin-top: 60px;
-    justify-content: center;
   }
 
   .review-container {
